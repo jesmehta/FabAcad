@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <title>Phase 1 &mdash; Jesal's FabAcademy Chronicles</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href="../.." class="site-name"> Jesal's FabAcademy Chronicles</a>
+                </div>
+                <div class="search">
+                    <div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    </form>
+</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><a class="nav-item" href="../..">Home</a></li>
+                    <li class="toctree-l1"><a class="nav-item" href="../../about/">About Me</a></li>
+                    <li class="toctree-l1"><button class="section nav-item">Weekly Assignments</button>
+<ul class="subnav">
+    <li class="toctree-l2 current"><button class="section nav-item">W1 Project management</button>
+<ul class="subnav">
+    <li class="toctree-l3 current"><a class="nav-item current" href="./">Phase 1</a>
+<ul class="subnav">
+<li class="toctree-l4"><a class="nav-item toc" href="#update-01">Update 01</a></li>
+<li class="toctree-l4"><a class="nav-item toc" href="#update-02">Update 02</a></li>
+<li class="toctree-l4"><a class="nav-item toc" href="#update-03">Update 03</a></li>
+</ul></li>
+    <li class="toctree-l3"><a class="nav-item" href="../week1B/">Phase 2</a></li>
+</ul></li>
+    <li class="toctree-l2">
+<a class="nav-item" href="../week2/">W2 Computer Aided Design</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../week3/">W3 Computer controlled cutting</a></li>
+</ul></li>
+                    <li class="toctree-l1"><a class="nav-item" href="../../project/">Project</a></li>
+                </ul>
+            </nav>
+            <div class="repo">
+    <div class="previous"><a href="../../about/">&laquo; Previous</a></div>
+    <div class="next"><a href="../week1B/">Next &raquo;</a></div>
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href="../.." class="site-name"> Jesal's FabAcademy Chronicles</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    <li>Weekly Assignments &raquo; </li><li>W1 Project management</li>
+</ul>
+</nav>
+                <div id="content"><h1 id="week-01">Week 01</h1>
+<p>Teething problems !</p>
+<p>I spent the first few days wandering between the links and resources.
+Documenting the way-finding and decisions behind choosing <em>"How to document"</em> is extremely meta so I will just describe whatever I come up with post fact. Currently I am just struggling with How to create the webpages in a fast and convenient method.</p>
+<p>What have I done so far :
+- Attended the Wednesday session
+- Attended the Saturday GOT session</p>
+<ul>
+<li>
+<p>Task 1 : Agreements</p>
+<ul>
+<li>Downloaded the 3 agreement documents,</li>
+<li>reuploaded them to my repo,</li>
+<li>edited them to add my name in there,</li>
+<li>moved them into a separate sub-directory for the sake of organization
+I would have liked to try adding them directly to my repo through some clone-shone mojo but it seemed faster to d/l and re-upload, plus I realised I wold have to edit them to sign them so files staying linked would definitely not be the solution even if that kind of thing worked. <strong>#AskAmit if this was possible</strong></li>
+</ul>
+</li>
+<li>
+<p>Compiled all the relevant links to a Notion page, to which I will keep adding. These include</p>
+<ul>
+<li>my Gitlab editor page</li>
+<li>my "deployed" "rendered" page</li>
+<li>the Fab2023 schedule with all the sublinks and pages that I will go through selectively/step-by-step</li>
+<li>lots of resource, examples, and other random links tossed around during the sessions/suggested by various people</li>
+</ul>
+</li>
+</ul>
+<p>The story so far :
+I am commfortable with markdown, I've used it before on GitHub
+I do not want te be editing Raw HTML (unless absloutely necessary, and even then I suspect it may not work given that static sites are probably re-generated often)</p>
+<p>MkDocs is useful to create markdown docus, I guess /shrug/ Is this correct ? <strong>#AskAmit</strong>
+MkDocs allows you to apply a theme, to prettify your pages.</p>
+<p>I need to find a workflow that goes Markdown -&gt; pretty HTML, and uploads this HTML to the repo
+My suspicion :
+- edit in VSCode to make .md files
+- render .md files using MkDocs + applied theme to generate HTML offline on my laptop
+- keep syncing the folder with the repo
+- Gitlab will render the site as usual</p>
+<p>If this is correct, my bottlenecks/questions :
+- install VSCode (unless Atom is ok)
+- can I get away without using MkDocs and write markdown directly somewhere, like I am doing on my github sandbox site ?</p>
+<ul>
+<li>
+<p>(I have forgotten how I do it on the sandbox site as well, and don't rememeber where I kept the notes) - but my few questions were</p>
+<ul>
+<li>What's the priority of index.html, index.md, readme.md, etc and other files in the same folder</li>
+<li>How do I deploy the github.io files as pages on github.com, and sub-pages, etc</li>
+<li>I had this figured out at one point so I'll just go jog my memory once I'm done with this stream-of-consciousness brain-venting+figuring out loud</li>
+</ul>
+</li>
+<li>
+<p>for now I am just creating a new folder within the assignements page and writing THIS markdown file so I can get the content down atleast, while I figure the How-To, and possibly since it's the only file in the folder, it renders as the page as well ? fingers crossed.</p>
+</li>
+</ul>
+<h2 id="update-01">Update 01</h2>
+<p>Things I have learnt in the past 5 minutes
+- refer to the markdown formatting guide, it is good to remind yourself from time to time
+- Folder + week01.md does not work, the file doesn't render in Gitlab
+- Folder + readme.md renders the readme file when you enter the folder on Gitlab</p>
+<p>More questions :
+I am not necessarily wedded to markdown if I can figure a good workflow that takes my content and creates HTML out of it - whether it's a WYSIWYG editor or whatever, as long as my major task is the content, and the formatting is figured maybe once, likely as a theme file.
+<em>I am realising what I want is basically MS Word with Styles. Oh dear. This can be very good or very bad.</em></p>
+<h2 id="update-02">Update 02</h2>
+<ul>
+<li>Added the link to the Week01/readme.md file to the week01.html page</li>
+<li>/Folder/file.md is RELATIVE to ROOT links, didn't work</li>
+<li>Folder/file.md is relative to current position and does work to access file</li>
+<li><strong>Unfortunately</strong> that just gets you to download the readme.md file instead of opening it as a page</li>
+</ul>
+<h2 id="update-03">Update 03</h2>
+<p>I'm making the more functional updates now, for now I guess I have explored the render + structure issues enough to poke around and <strong>#AskAmit</strong> tomorrow
+- Added actual name to the html files in title, heading and footer.
+- Updated the about.html page. PLEASE UPDATE THAT OLD COPYPASTA DESCRIPTION AND DON'T BE CAMPING AT THE INTERSECTION. That shit got old. Add images and jazz.
+- Added brief material to the Final Project page. Sorely missed markdown while writing pure HTML.</p></div>
+                <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href="../../about/" title="About Me"><span>Previous</span></a></div>
+        <div class="next"><a href="../week1B/" title="Phase 2"><span>Next</span></a></div>
+    </div>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../search/main.js"></script>
+</body>
+
+</html>
