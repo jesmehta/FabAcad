@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../img/favicon.ico">
-    <title>W3 Computer controlled cutting &mdash; Jesal's FabAcademy Chronicles</title>
+    <title>W4 Embedded Programming &mdash; Jesal's FabAcademy Chronicles</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -49,19 +49,19 @@
 </ul></li>
     <li class="toctree-l2">
 <a class="nav-item" href="../week2/">W2 Computer Aided Design</a></li>
-    <li class="toctree-l2 current"><a class="nav-item current" href="./">W3 Computer controlled cutting</a>
+    <li class="toctree-l2"><a class="nav-item" href="../week3/">W3 Computer controlled cutting</a></li>
+    <li class="toctree-l2 current"><a class="nav-item current" href="./">W4 Embedded Programming</a>
 <ul class="subnav">
-<li class="toctree-l3"><a class="nav-item toc" href="#lasercutter-characteristics">Lasercutter characteristics</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#choice-of-chips">Choice of Chips</a></li>
 <li class="toctree-l3"><a class="nav-item toc" href="#construction-kit">Construction Kit</a></li>
 </ul></li>
-    <li class="toctree-l2"><a class="nav-item" href="../week4/">W4 Embedded Programming</a></li>
 </ul></li>
                     <li class="toctree-l1"><a class="nav-item" href="../../project/">Project</a></li>
                 </ul>
             </nav>
             <div class="repo">
-    <div class="previous"><a href="../week2/">&laquo; Previous</a></div>
-    <div class="next"><a href="../week4/">Next &raquo;</a></div>
+    <div class="previous"><a href="../week3/">&laquo; Previous</a></div>
+    <div class="next"><a href="../../project/">Next &raquo;</a></div>
 </div>
         </aside>
         <div id="spacer"><button class="arrow"></button></div>
@@ -76,59 +76,28 @@
     <li>Weekly Assignments</li>
 </ul>
 </nav>
-                <div id="content"><h1 id="computer-controlled-cutting">Computer Controlled cutting</h1>
-<p>The lasercutter is one of my favourite tools in the fablab.
-I am not so familiar with the one at the RIIDL Fablab, but in the past years I have used others at a different makerspace as well as at my previous workplace extensively.</p>
-<p>So this is as good an excuse as any to get to know the RIIDL lasercutter better.</p>
-<h2 id="lasercutter-characteristics">Lasercutter characteristics</h2>
-<p>Points to test :</p>
-<ul>
-<li>focus</li>
-<li>power x speed settings for select materials</li>
-<li>kerf</li>
-<li>joints and joint clearance</li>
-</ul>
-<p>Focus :
-Everyone around is using 6 mm as a nominal value and thumb rule - sometimes literally (insert pic of measuring by thumb). From experience, I know that the zone of focus is rather forgiving usually, and so this works, but I'd like to define it more precisely.</p>
-<p>Years ago, I came up with this little tool to find the zone of focus, as well as to look at defocussed beam diameters.</p>
-<p><img alt="Jig" src="../images/fjig.jpg" />
-<img alt="Focus line" src="../images/fline.jpg" />
-<img alt="Focus line" src="../images/focus.jpg" /></p>
-<p><a href="https://hackaday.io/project/160647-lasercutter-focus-calibration-jig">Focus Calibration Jig on Hackaday</a></p>
-<ul>
-<li>
-<p>Cutting settings
-<img alt="Comb" src="../images/trialcut.jpg" />
-<img alt="Comb" src="../images/trialcut2.jpg" /></p>
-</li>
-<li>
-<p>Slot fit testing - Card paper
-<img alt="Comb" src="../images/comb1.jpg" />
-<img alt="Comb" src="../images/comb2.jpg" /></p>
-</li>
-</ul>
+                <div id="content"><h1 id="embedded-programming">Embedded Programming</h1>
+<p>Embedded programming sounds scary to me.
+I have never been on good terms with electronics engineering-ish things, and the trauma that electronics subjects inflict on humble mechanical engineers through engineering school is considerable.</p>
+<p>Over the past few years though, the Arduino has been a refreshing and surprisingly easy workflow to grasp.
+I recognize that it a prototyping board, and it's big and chunky and expensive at times, but man! does it work simply.</p>
+<p>So when Neil said that this week's session is intended to make us get past using the Arduino and making one ourselves, use the microcontrollers directly and have everything work at a fraction of the expense, I was all for it.</p>
+<h2 id="choice-of-chips">Choice of Chips</h2>
+<p>I decided to play a little safe and work with the raw versions of MCUs that I was already familiar with as boards.</p>
+<p>So my primary choice was the Atmega 320P, which is at the heart of the Arduino as well. My second familiar chip was the ESP-8266, since I had used NodeMCUs at some point in the past, and they have the benefit of built-in Wifi+BT. Neil in his talk heartily recommended the RP2040, so I added that to my list. Lastly, I was curious about the ATtiny85, which was a tiny little thing but supposed to work with the Arduino IDE as well.</p>
+<p>I trawled through the net for How-Tos and other instructions and have a sizeable list of possibilities that I will continue to explore.
+Once I had understood the lay of the land and figured out a few essential basics, I decided on what options I will be exploring.</p>
+<p>Next I went to Robu.in, the Indian version of Radioshack or what-have-you to see what they had in stock and what they said about it, to get a reality check on what's available and prices. I also followed that up with calls and a trip to Lamington road, the street market for all things electronic in Bombay.</p>
+<p>These are the few directions I want to really explore :
+1. Using the Atmega328P</p>
 <h2 id="construction-kit">Construction Kit</h2>
-<p>I wanted to avoid the usual modular construction approaches, as well as not have a very rigid shape.
-I do a lot of generative art and one of the first things I had done was the Fractal Tree. My mother practices Bonsai and so I have been exposed to tree shapes there as well.
-Combining these two, I decided to try make a kit that allows you to construct tree shapes that are modular yet somewhat organic, or atleast allow for some chaotic movement as well.</p>
-<p>I created a rectangular strip in Fusion, and added slots at 45 degree angles.
-I parametrized the following factors :
-- thickness of material, affects slot width
-- proportion of length to width
-- overall unit length</p>
-<p>The first version was narrower and had staggered slots. However, I realized that modules would interfere with each other at the joint. So I created a second version which was a wider strip but allowed symmetrical slots (although the staggered ones were preferable since they look more organic)</p>
-<p><img alt="Tree 1" src="../images/fusion1.jpg" />
-<img alt="Tree 1" src="../images/fusion2.jpg" />
-<img alt="Tree 1" src="../images/layout.jpg" /></p>
-<ul>
-<li>Narrow Rectangle with branching in card
-<img alt="Tree 1" src="../images/kit1.jpg" />
-<img alt="Tree 2" src="../images/kit2.jpg" /></li>
-</ul></div>
+<p><img alt="ATTiny" src="../images/Att1.jpg" />
+<img alt="ATTiny" src="../images/Att2.jpg" />
+<img alt="ATTiny" src="../images/ATTblink.jpg" /></p></div>
                 <footer>
     <div class="footer-buttons">
-        <div class="previous"><a href="../week2/" title="W2 Computer Aided Design"><span>Previous</span></a></div>
-        <div class="next"><a href="../week4/" title="W4 Embedded Programming"><span>Next</span></a></div>
+        <div class="previous"><a href="../week3/" title="W3 Computer controlled cutting"><span>Previous</span></a></div>
+        <div class="next"><a href="../../project/" title="Project"><span>Next</span></a></div>
     </div>
     <div class="footer-note">
         <p>
