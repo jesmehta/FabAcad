@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../img/favicon.ico">
-    <title>W2 Computer Aided Design &mdash; Jesal's FabAcademy Chronicles</title>
+    <title>W5 3D Printing &mdash; Jesal's FabAcademy Chronicles</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -47,20 +47,22 @@
     <li class="toctree-l3"><a class="nav-item" href="../week1A/">Phase 1</a></li>
     <li class="toctree-l3"><a class="nav-item" href="../week1B/">Phase 2</a></li>
 </ul></li>
-    <li class="toctree-l2 current">
-<a class="nav-item current" href="./">W2 Computer Aided Design</a>
-<ul class="subnav">
-</ul></li>
+    <li class="toctree-l2">
+<a class="nav-item" href="../week2/">W2 Computer Aided Design</a></li>
     <li class="toctree-l2"><a class="nav-item" href="../week3/">W3 Computer controlled cutting</a></li>
     <li class="toctree-l2"><a class="nav-item" href="../week4/">W4 Embedded Programming</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../week5/">W5 3D Printing</a></li>
+    <li class="toctree-l2 current"><a class="nav-item current" href="./">W5 3D Printing</a>
+<ul class="subnav">
+<li class="toctree-l3"><a class="nav-item toc" href="#characterization">Characterization</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#weekly-assignment">Weekly Assignment</a></li>
+</ul></li>
 </ul></li>
                     <li class="toctree-l1"><a class="nav-item" href="../../project/">Project</a></li>
                 </ul>
             </nav>
             <div class="repo">
-    <div class="previous"><a href="../week1B/">&laquo; Previous</a></div>
-    <div class="next"><a href="../week3/">Next &raquo;</a></div>
+    <div class="previous"><a href="../week4/">&laquo; Previous</a></div>
+    <div class="next"><a href="../../project/">Next &raquo;</a></div>
 </div>
         </aside>
         <div id="spacer"><button class="arrow"></button></div>
@@ -75,11 +77,53 @@
     <li>Weekly Assignments</li>
 </ul>
 </nav>
-                <div id="content"><p>That floats on high over vales and hills</p></div>
+                <div id="content"><h1 id="3d-printing">3D Printing</h1>
+<p>3D printing is one of the most accessible making processes out there. Although Lasercutting is my preferred method, ever since I got myself a Prusa, the sheer accesibility and ability to play with 3D modelling and printing is unparalleled.</p>
+<h2 id="characterization">Characterization</h2>
+<p>I downloaded a selection of stls from the FabAcademy page and prinnted them out on the Prusa.</p>
+<p><img alt="Calibration" src="../images/calib3DP.jpg" />
+<img alt="Calibration" src="../images/calibPrint.jpg" /></p>
+<p>The 5 primary properties I tested were</p>
+<ol>
+<li>Bridging</li>
+</ol>
+<p><img alt="Bridge" src="../images/bridge.jpg" /></p>
+<p>Upto 20 mm ling bridges are printing perfectly fine.</p>
+<ol>
+<li>
+<p>Unsupported angle
+<img alt="Bridge" src="../images/angle.jpg" />
+Unsupported angles all the way down to 10 degrees look fine, while thumbrules say not too go beyond 45 degrees. I am very pleased to find this out, I will now print a lot more unsupported structures.</p>
+</li>
+<li>
+<p>Unsupported Cantilever
+<img alt="Canti" src="../images/canti.jpg" />
+Unsupported cantilevers don't do that well, showing hanging strings from 2 mm onwards.</p>
+</li>
+<li>
+<p>Printing widths
+<img alt="Width" src="../images/width.jpg" />
+All negatives upto 0.1 mm print fine. Positives of 0.1 mm are lost but 0.2 mm and upwards are fine.</p>
+</li>
+<li>
+<p>Clearances for in-place printing</p>
+</li>
+</ol>
+<p>Still printing.</p>
+<h2 id="weekly-assignment">Weekly Assignment</h2>
+<p>I love Math Art and Complex Geometry. It is one of the reasons I got into Coding as well.</p>
+<p>I am making 2 models for this assignment.</p>
+<p>The first is a fractal Menger Sponge, that I have coded in Processing.
+<img alt="Menger" src="../images/Menger.jpg" />
+<img alt="Menger" src="../images/Menger3DP.jpg" /></p>
+<p>The second is a modular interpenetrating surface that I am modelling in Fusion initially to understand it better, but I hope to move this to grasshopper for better control of the parameters.
+<img alt="Surface" src="./images/Surface.jpg" /></p>
+<p>A third non-subtractive application is 3D printed chain-mail, which I have modelled here in Fusion and printed out.
+<img alt="Chainmail" src="./images/chainmail1.jpg" /></p></div>
                 <footer>
     <div class="footer-buttons">
-        <div class="previous"><a href="../week1B/" title="Phase 2"><span>Previous</span></a></div>
-        <div class="next"><a href="../week3/" title="W3 Computer controlled cutting"><span>Next</span></a></div>
+        <div class="previous"><a href="../week4/" title="W4 Embedded Programming"><span>Previous</span></a></div>
+        <div class="next"><a href="../../project/" title="Project"><span>Next</span></a></div>
     </div>
     <div class="footer-note">
         <p>

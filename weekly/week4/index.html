@@ -53,15 +53,16 @@
     <li class="toctree-l2 current"><a class="nav-item current" href="./">W4 Embedded Programming</a>
 <ul class="subnav">
 <li class="toctree-l3"><a class="nav-item toc" href="#choice-of-chips">Choice of Chips</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#construction-kit">Construction Kit</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#weekly-assignment">Weekly Assignment</a></li>
 </ul></li>
+    <li class="toctree-l2"><a class="nav-item" href="../week5/">W5 3D Printing</a></li>
 </ul></li>
                     <li class="toctree-l1"><a class="nav-item" href="../../project/">Project</a></li>
                 </ul>
             </nav>
             <div class="repo">
     <div class="previous"><a href="../week3/">&laquo; Previous</a></div>
-    <div class="next"><a href="../../project/">Next &raquo;</a></div>
+    <div class="next"><a href="../week5/">Next &raquo;</a></div>
 </div>
         </aside>
         <div id="spacer"><button class="arrow"></button></div>
@@ -89,15 +90,40 @@ I recognize that it a prototyping board, and it's big and chunky and expensive a
 Once I had understood the lay of the land and figured out a few essential basics, I decided on what options I will be exploring.</p>
 <p>Next I went to Robu.in, the Indian version of Radioshack or what-have-you to see what they had in stock and what they said about it, to get a reality check on what's available and prices. I also followed that up with calls and a trip to Lamington road, the street market for all things electronic in Bombay.</p>
 <p>These are the few directions I want to really explore :
-1. Using the Atmega328P</p>
-<h2 id="construction-kit">Construction Kit</h2>
+1. Using the Atmega328P without the rest of the Arduino.
+There's a few Instructables for giving it an external clock and using it directly, by using an Arduino dev-board or ejecting the chip from an Arduino to use the rest as a bootloader.
+There's also a How-to on making an Arduino on a breadboard, but I am not too keen on that.</p>
+<ol>
+<li>
+<p>Use the RP2040
+Not sure what to do with this except blink it for now, but Hey, who knows. It's supposed to be very powerful, so we'll take it for a spin.</p>
+</li>
+<li>
+<p>Use ESP8266
+The wifi functionality is an obvious plus, so if I can use the bare chip, that would be nice.</p>
+</li>
+<li>
+<p>Use the ATtiny85
+Being a tiny little thing, I am rather enthusiastic for using this in any of it's available forms. I've discovered how to bootload the bare chip using the Arduino, but there's USB and microUSB versions as well that are directly usable. Looking forward to playing with this too.</p>
+</li>
+</ol>
+<h2 id="weekly-assignment">Weekly Assignment</h2>
+<p>Most of the tools and chips I need are still shipping -  I took too long to decide and order them. However, I have an ATtiny lying around that a friend had dropped off and while I knew in theory that it was an Arduino-IDE compatible protoboard that would do this-that-and-more, I have never actually used it. So while I wait for my chips and dips to arrive, the ATtiny is a go.</p>
+<p>I followed the instructions on the page below and added the board source to the Arduino IDE, then got to programming the ATtiny.</p>
+<p><a href="http://digistump.com/wiki/digispark/tutorials/connecting">Using the ATtiny USB devboard</a></p>
+<p>The funny part with the ATtiny85 is that you code and compile first, then only plug it in when the IDE asks for it. That bit is likely to throw you off if you forget it.</p>
+<p>Anyway, I got the onboard LED to blink.</p>
+<p>The next thing I tried was putting an external LED with a 270 ohm resistor on P0 and getting that to blink as well.</p>
+<p>The next few things I want to try out with the ATtiny are, first-off, adding an LDR and a Pot to control the LDR's sensitivity, multiple LEDs blinking in different ways in response to the LDR, and playing it forward from there.</p>
 <p><img alt="ATTiny" src="../images/Att1.jpg" />
 <img alt="ATTiny" src="../images/Att2.jpg" />
-<img alt="ATTiny" src="../images/ATTblink.jpg" /></p></div>
+<img alt="ATTiny" src="../images/ATTblink.jpg" /></p>
+<p><img alt="ATTiny" src="./images/ATTUSB.jpg" />
+<img alt="ATTiny" src="../images/ATTLDR.jpg" /></p></div>
                 <footer>
     <div class="footer-buttons">
         <div class="previous"><a href="../week3/" title="W3 Computer controlled cutting"><span>Previous</span></a></div>
-        <div class="next"><a href="../../project/" title="Project"><span>Next</span></a></div>
+        <div class="next"><a href="../week5/" title="W5 3D Printing"><span>Next</span></a></div>
     </div>
     <div class="footer-note">
         <p>
